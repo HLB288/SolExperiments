@@ -6,19 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "x",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "y",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
+				"inputs": [],
+				"name": "addition",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,7 +15,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -43,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DoubleFunction.sol": "Exercise"
+			"BuiltItExercice.sol": "Exercise"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -57,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"DoubleFunction.sol": {
-			"keccak256": "0x1d15f00f44c153222901781a890fcedeb6bdacc2e5815aee96aada2c58aa3fef",
+		"BuiltItExercice.sol": {
+			"keccak256": "0x2436f51c05e9f554fa055ab96907fe0087f85412c37409c9a26431852e831d83",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://10e6aab411c8942660aa0653c47b97e8dfdc683d24b5f479726f6248f22044d8",
-				"dweb:/ipfs/QmUDGURWzThb6g2JpukUSBfMUieet1iinY59yQnPHXgtm6"
+				"bzz-raw://e39e0ed73f8f1ddf12b8ba579aca15380c589c1efd79577ecdac4f502305576f",
+				"dweb:/ipfs/QmQbDfv1zVKgimuVdUdGE7sQAPESzzjuGGjhNAng9AoatD"
 			]
 		}
 	},
