@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "incrementer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"boucles.sol": "LoopFor"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"boucles.sol": {
+			"keccak256": "0x3fb96fd263897a95ec7b6baf39439a26ea8ad74e08a11138452f6048e368b392",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e30260e1643279febc161fcb1a656c1a7977c6bc91264d5a26f2a1400d8eb701",
+				"dweb:/ipfs/QmVKCbGrhMixnG5Bykoic9U3TGu4VqsyFiMr2g8HWTo1k1"
+			]
+		}
+	},
+	"version": 1
+}
