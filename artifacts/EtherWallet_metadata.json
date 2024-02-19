@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.16+commit.07a7930e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -83,7 +83,7 @@
 		"compilationTarget": {
 			"EtherWallet.sol": "EtherWallet"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -96,11 +96,11 @@
 	},
 	"sources": {
 		"EtherWallet.sol": {
-			"keccak256": "0xff0ca70e23259e379346a6d7f512ff235f83fd8177bd9ebf54ac118fe30d019e",
+			"keccak256": "0xe3e1eb6f2792bf8b07fb959552a8ebe0872463babd5a83b2f900c2db8fe737c5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://00c55567c91aadabfb643a4e4ebb8fa6fd642bceaac954708c9064eea2fee9ae",
-				"dweb:/ipfs/QmXmDdAKroJDGn3FLGVGQ4sXNBUx9EjpuKc7StEcLjWCGU"
+				"bzz-raw://f8bc598b22753c0c479790e30c8260efe5620c637c31124a0ebe5204f5ba69dd",
+				"dweb:/ipfs/Qma89PqgkU84KWd5QtWPFdXHMEibKBsph9eDku7HMRE3zV"
 			]
 		}
 	},
