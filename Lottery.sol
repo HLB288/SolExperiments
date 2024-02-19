@@ -37,6 +37,20 @@ contract Lottery {
     function bet() external payable inState(State.BETTING) {
         require(msg.value == moneyRequiredTOBet, "Can Only bet the exact ETH that is set");
         players.push(payable(msg.sender));
+        if(players.length == maxNumPlayers) {
+            //Pick a winner
+            uint winner = _randomwModulo(maxNumPlayers)
+            //>Send the money to the winner
+            //Change the state to IDLE 
+            //Clean the data by removing the players from the betting round
+
+        }
+    }
+    function _randomwModulo(uint modulo) view internal returns(uint) {
+        uint randomNumber;
+        randomNumber= uint(keccak256(abi.encorePacked(block.difficulty, block.timestamp)))
+        randomNumber = randomNumber % modulo
+        return randomNumber;
     }
 
     modifier inState(State state) {
