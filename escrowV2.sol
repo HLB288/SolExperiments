@@ -21,11 +21,12 @@ contract Escrow {
     }
 
     function release() public onlyEscrowParty() {
-        require(address(this).balance == amount, "Cannot realse funds before full amount is sent";
+        require(address(this).balance == amount, "Cannot realse funds before full amount is sent");
         seller.transfer(amount);
 
     }
     modifier onlyEscrowParty() {
         require(msg.sender == escrowParty, "ONly escrow party can perform this operation");
+        _;
     }
 } 

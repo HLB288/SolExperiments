@@ -106,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"escromContract.sol": "Escrow"
+			"escrowV2.sol": "Escrow"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -120,12 +120,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"escromContract.sol": {
-			"keccak256": "0xb363534a1932531bd855161269d9ef36c0935dc48c92b7e1a16f77d126214093",
+		"escrowV2.sol": {
+			"keccak256": "0x2d0563e8123b3090a27795fa7a78ecc82430c6ac51fca564d8e1a7d2f12cdb78",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0fa3dfad9392e5db0b93b70a0dc4e70d6e395257452d55c342cf37341795d97e",
-				"dweb:/ipfs/QmUJTCxh6tyCj2wgyBHuYnAinxHEmm8CNXxr9fu9Mb544d"
+				"bzz-raw://04e0def420f0393590a55bf5f706a6effcf2c2fcec0fd63f5165a63a662b366a",
+				"dweb:/ipfs/QmYXWr28LPGYHFgDFWfLe7PeFWd6WJWNywRpcbiJwB51Wv"
 			]
 		}
 	},
