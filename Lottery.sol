@@ -39,17 +39,32 @@ contract Lottery {
         players.push(payable(msg.sender));
         if(players.length == maxNumPlayers) {
             //Pick a winner
-            uint winner = _randomwModulo(maxNumPlayers)
+            uint winner = _randomwModulo(maxNumPlayers);
             //>Send the money to the winner
+            players[winner].transfer((moneyRequiredTOBet * maxNumPlayers) * (100-houseFee) / 100);
             //Change the state to IDLE 
+            currentState = State.IDLE;
             //Clean the data by removing the players from the betting round
+            delete players;
 
         }
     }
+
+    // Cancel the current betting round wich will change the state to State.IDLE
+    // BY cancelling we are sending back the ETH to the players
+    function cancel() external inState(State.BETTING) onlyAdmin() {
+        for(uint i =0; i < players.length; i++) {
+            players[i].transfer(moneyRequiredTOBet);
+
+        }
+        delete players;
+        currentState = State.IDLE;
+    }
+
     function _randomwModulo(uint modulo) view internal returns(uint) {
         uint randomNumber;
-        randomNumber= uint(keccak256(abi.encorePacked(block.difficulty, block.timestamp)))
-        randomNumber = randomNumber % modulo
+        randomNumber= uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp)));
+        randomNumber = randomNumber % modulo;
         return randomNumber;
     }
 
